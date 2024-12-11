@@ -1,0 +1,112 @@
+
+.cart-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px;
+    margin: 20px auto;
+    background-color: white;
+    max-width: 1200px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.cart-items, .order-summary {
+    flex: 1 1 45%;
+    margin: 10px;
+}
+
+h2 {
+    color: #333;
+}
+
+.cart-item, .order-summary {
+    background-color: white;
+    border: 1px solid #ddd;
+    padding: 15px;
+    margin-bottom: 15px;
+}
+
+.item-details p, .order-summary p {
+    margin: 5px 0;
+}
+
+.item-quantity {
+    display: flex;
+    align-items: center;
+}
+
+.item-quantity label {
+    margin-right: 10px;
+}
+
+.item-quantity input {
+    width: 50px;
+    padding: 5px;
+}
+
+.checkout-btn {
+    border: none;
+    padding: 10px 20px;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    background-color: black;
+    margin-top: 100px;
+    margin-left: 200px;
+    width: 200px;
+    height: 50px;;
+    color: white;
+}
+
+.checkout-btn:hover {
+    background-color: #0056b3;
+}
+.order-summary
+{
+    margin-top: 10px;
+    background-color: darkseagreen;
+    width: 50%;
+    height: 50%;
+}
+.top-nav {
+    background-color: white;
+    overflow: hidden;
+    margin: auto;
+}
+
+.leftNav {
+    float: left;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    font-family: "Berlin Sans FB", "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.leftNav a:hover {
+    color: black;
+}
+
+.leftNav a.activeNav {
+    color: pink;
+}
+
+.rightNav {
+    float: right;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    font-family: "Berlin Sans FB", "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.img-nav {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    position: relative;
+    margin-top: -10px;
+}
