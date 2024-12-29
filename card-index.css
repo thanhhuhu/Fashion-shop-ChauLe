@@ -153,43 +153,91 @@ body {
     border-radius: 8px;
 }
 
-.product-description h1 {
+.product-description h1
+{
     font-size: 28px;
     margin-bottom: 10px;
 }
 
-.product-description p {
+.product-description p
+{
     color: #555;
 }
 
-.product-description hr {
+.product-description hr
+{
     margin: 20px 0;
     border: 0;
     border-top: 1px solid #ddd;
 }
 
-.features-grid {
+.features-grid
+{
     display: grid;
     grid-template-columns: 1fr 1fr; /* Hai cột */
     gap: 20px; /* Khoảng cách giữa các phần tử */
 }
 
-.feature-item {
+.feature-item
+{
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
 }
 
-.feature-item img {
+.feature-item img
+{
     width: 100%;
     height: auto;
     border-radius: 8px;
     margin-bottom: 10px;
 }
 
-.feature-item p {
+.feature-item p
+{
     font-size: 14px;
     color: #333;
     margin: 0;
+}
+/*accordion*/
+.accordion
+{
+    cursor: pointer;
+    font-weight: bold;
+    padding : 20px;
+    margin-bottom: 10px;
+    margin-left: 100px;
+    border: 1px solid #ddd;
+    width:30%;
+    font-family: Arial, sans-serif;
+}
+.accordion-content
+{
+    display: none;
+    padding: 10px;
+    border: none;
+    margin-top: -10px;
+    width: 40%;
+    margin-left: 100px;
+    transition: max-height 0.2s ease-out ;
+}
+.active .accordion-content
+{
+    display: block;
+}
+.accordion:after
+{
+    content: '+';
+    float: right;
+}
+.accordion:active::after
+{
+    content:'-';
+}
+.accordion-content.open
+{
+    max-height: 200px;
+    padding-top:10px;
+    padding-bottom: 10px;
 }

@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="card-index.css">
 </head>
 <body>
+<!--các nút ở thanh nav-->
 <div class="top-nav">
     <a href="index.html" class="leftNav"><img src="image/logo.jpg" alt="" class="img-nav"></a>
     <a href="" class="leftNav"><img src="" alt=""></a>
@@ -85,6 +86,31 @@
         </div>
     </div>
 </div>
+
+<!--accordion chứa các details -->
+<div class="accordion-container">
+    <div class="accordion">Details</div>
+    <div class="accordion-content">
+        <p>- Bra Cup Support: Regular Support<br>
+            - Bra Pads: Built-In Pads<br>
+            - Hooks: Yes<br>
+            - Shoulder adjuster: Yes<br>
+            - The images shown may include colors that are not available. <br>
+            Product ID: 469664,464333 <br>
+            Please note that this product may have different product ID, even if it is the same item.
+        </p>
+    </div>
+    <div class="accordion">Materials/Care</div>
+    <div class="accordion-content">
+        <p>Fabric details <br>
+            Body: 85% Nylon, 15% Spandex/ Cup ( Inner Lining ): 100% Polyester<br>
+            Imported<br>
+            Washing instructions<br>
+            Hand wash cold, Do not dry clean<br>
+        </p>
+    </div>
+</div>
+
 </body>
 <script>
     function selectButton(button) {
@@ -95,5 +121,19 @@
         // Thêm trạng thái "selected" cho nút được nhấn
         button.classList.add('selected');
     }
+
+    const accordions = document.querySelectorAll('.accordion');
+
+    accordions.forEach(acc => {
+        acc.addEventListener('click', function() {
+            this.classList.toggle('active');
+            const content = this.nextElementSibling;
+            if (content.style.display === 'block') {
+                content.style.display = 'none';
+            } else {
+                content.style.display = 'block';
+            }
+        });
+    });
 </script>
 </html>
